@@ -14,7 +14,6 @@ file.Close();
 
 string[] lines = line.Split('\n');
 int total = 0;
-int linesAdded = 0;
 
 foreach (string l in lines)
 {
@@ -45,8 +44,6 @@ foreach (string l in lines)
     string lastNumber = thisLineString.Substring(thisLineString.Length - 1, 1);
     string aggregate = firstNumber + lastNumber;
     total += int.Parse(aggregate);
-    linesAdded++;
-    Console.WriteLine(aggregate);
 }
 
 Console.WriteLine(total);
